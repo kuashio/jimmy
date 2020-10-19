@@ -1,0 +1,666 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jun  5 18:52:03 2020
+# Process ID: 23396
+# Current directory: C:/dev/fpga/Vivado/jimmy/jimmy.runs/synth_1
+# Command line: vivado.exe -log basys3_jimmy_prog3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source basys3_jimmy_prog3.tcl
+# Log file: C:/dev/fpga/Vivado/jimmy/jimmy.runs/synth_1/basys3_jimmy_prog3.vds
+# Journal file: C:/dev/fpga/Vivado/jimmy/jimmy.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source basys3_jimmy_prog3.tcl -notrace
+Command: synth_design -top basys3_jimmy_prog3 -part xc7a35tcpg236-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-3
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3704 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 768.707 ; gain = 234.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'basys3_jimmy_prog3' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/basys3_jimmy_prog3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'jimmy' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/jimmy.v:42]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/jimmy.v:134]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/jimmy.v:145]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/jimmy.v:217]
+WARNING: [Synth 8-6014] Unused sequential element sp_reg was removed.  [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/jimmy.v:117]
+WARNING: [Synth 8-6014] Unused sequential element N_reg was removed.  [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/jimmy.v:160]
+WARNING: [Synth 8-6014] Unused sequential element V_reg was removed.  [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/jimmy.v:161]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'r_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Invalid write to RAM. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "r_reg" dissolved into registers
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Invalid write to RAM. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Invalid write to RAM. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Invalid write to RAM. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'jimmy' (1#1) [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/jimmy.v:42]
+WARNING: [Synth 8-7023] instance 'james' of module 'jimmy' has 14 connections declared, but only 7 given [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/basys3_jimmy_prog3.v:45]
+INFO: [Synth 8-6157] synthesizing module 'program_memory3' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:37]
+WARNING: [Synth 8-3848] Net program_rom[255] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[254] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[253] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[252] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[251] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[250] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[249] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[248] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[247] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[246] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[245] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[244] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[243] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[242] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[241] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[240] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[239] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[238] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[237] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[236] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[235] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[234] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[233] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[232] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[231] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[230] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[229] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[228] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[227] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[226] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[225] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[224] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[223] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[222] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[221] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[220] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[219] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[218] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[217] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[216] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[215] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[214] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[213] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[212] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[211] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[210] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[209] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[208] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[207] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[206] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[205] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[204] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[203] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[202] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[201] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[200] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[199] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[198] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[197] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[196] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[195] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[194] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[193] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[192] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[191] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[190] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[189] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[188] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[187] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[186] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[185] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[184] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[183] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[182] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[181] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[180] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[179] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[178] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[177] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[176] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[175] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[174] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[173] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[172] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[171] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[170] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[169] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[168] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[167] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[166] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[165] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[164] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[163] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[162] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[161] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[160] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[159] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[158] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[157] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+WARNING: [Synth 8-3848] Net program_rom[156] in module/entity program_memory3 does not have driver. [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:44]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'program_memory3' (2#1) [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:37]
+INFO: [Synth 8-6157] synthesizing module 'bin2bcd' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/bin2bcd.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bin2bcd' (3#1) [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/bin2bcd.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FreqDivider' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/FreqDivider.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'FreqDivider' (4#1) [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/FreqDivider.v:22]
+INFO: [Synth 8-6157] synthesizing module 'basys3_display_controller' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/basys3_display_controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hex2_7seg' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/hex2_7seg.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'hex2_7seg' (5#1) [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/hex2_7seg.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/basys3_display_controller.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'basys3_display_controller' (6#1) [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/basys3_display_controller.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'basys3_jimmy_prog3' (7#1) [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/basys3_jimmy_prog3.v:23]
+WARNING: [Synth 8-3917] design basys3_jimmy_prog3 has port dp driven by constant 1
+WARNING: [Synth 8-3331] design basys3_jimmy_prog3 has unconnected port sw[15]
+WARNING: [Synth 8-3331] design basys3_jimmy_prog3 has unconnected port sw[14]
+WARNING: [Synth 8-3331] design basys3_jimmy_prog3 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design basys3_jimmy_prog3 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design basys3_jimmy_prog3 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design basys3_jimmy_prog3 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design basys3_jimmy_prog3 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design basys3_jimmy_prog3 has unconnected port sw[8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 842.313 ; gain = 307.965
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 842.313 ; gain = 307.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 842.313 ; gain = 307.965
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 842.313 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/constrs_1/new/basys3.xdc]
+Finished Parsing XDC File [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/constrs_1/new/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/constrs_1/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/basys3_jimmy_prog3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/basys3_jimmy_prog3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 932.973 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 932.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 932.973 ; gain = 398.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 932.973 ; gain = 398.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 932.973 ; gain = 398.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/jimmy.v:101]
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "pc" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "in_strobe" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "result" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "B7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'program_rom_reg[30][7:0]' into 'program_rom_reg[31][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-4471] merging register 'program_rom_reg[29][7:0]' into 'program_rom_reg[31][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-4471] merging register 'program_rom_reg[28][7:0]' into 'program_rom_reg[31][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-4471] merging register 'program_rom_reg[27][7:0]' into 'program_rom_reg[31][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-4471] merging register 'program_rom_reg[26][7:0]' into 'program_rom_reg[31][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-4471] merging register 'program_rom_reg[25][7:0]' into 'program_rom_reg[31][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-4471] merging register 'program_rom_reg[24][7:0]' into 'program_rom_reg[31][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-4471] merging register 'program_rom_reg[23][7:0]' into 'program_rom_reg[31][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-4471] merging register 'program_rom_reg[22][7:0]' into 'program_rom_reg[31][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-4471] merging register 'program_rom_reg[21][7:0]' into 'program_rom_reg[31][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-4471] merging register 'program_rom_reg[20][7:0]' into 'program_rom_reg[31][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-4471] merging register 'program_rom_reg[19][7:0]' into 'program_rom_reg[31][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-4471] merging register 'program_rom_reg[18][7:0]' into 'program_rom_reg[31][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-4471] merging register 'program_rom_reg[17][7:0]' into 'program_rom_reg[31][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-4471] merging register 'program_rom_reg[16][7:0]' into 'program_rom_reg[31][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-4471] merging register 'program_rom_reg[15][7:0]' into 'program_rom_reg[31][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-4471] merging register 'program_rom_reg[10][7:0]' into 'program_rom_reg[13][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-4471] merging register 'program_rom_reg[4][7:0]' into 'program_rom_reg[14][7:0]' [C:/dev/fpga/Vivado/jimmy/jimmy.srcs/sources_1/new/program_memory3.v:45]
+INFO: [Synth 8-802] inferred FSM for state register 'anodes_reg' in module 'basys3_display_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                             0111
+                 iSTATE0 |                               01 |                             1011
+                 iSTATE1 |                               10 |                             1101
+                 iSTATE2 |                               11 |                             1110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'anodes_reg' using encoding 'sequential' in module 'basys3_display_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 932.973 ; gain = 398.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 25    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	  17 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 26    
+	   4 Input      8 Bit        Muxes := 4     
+	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 7     
+	  16 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 8     
+	  16 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 9     
+	  13 Input      1 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module basys3_jimmy_prog3 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module jimmy 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 10    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  17 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 26    
+	   4 Input      8 Bit        Muxes := 4     
+	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 5     
+	  16 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 8     
+	  16 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 8     
+	  13 Input      1 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+Module program_memory3 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 14    
+Module FreqDivider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module basys3_display_controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design basys3_jimmy_prog3 has port dp driven by constant 1
+WARNING: [Synth 8-3331] design FreqDivider has unconnected port ratio[0]
+WARNING: [Synth 8-3331] design basys3_jimmy_prog3 has unconnected port sw[15]
+WARNING: [Synth 8-3331] design basys3_jimmy_prog3 has unconnected port sw[14]
+WARNING: [Synth 8-3331] design basys3_jimmy_prog3 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design basys3_jimmy_prog3 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design basys3_jimmy_prog3 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design basys3_jimmy_prog3 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design basys3_jimmy_prog3 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design basys3_jimmy_prog3 has unconnected port sw[8]
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[31][1]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[12][1]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[11][1]' (FDSE) to 'pm/program_rom_reg[31][6]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[13][1]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[9][1]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[8][1]' (FDSE) to 'pm/program_rom_reg[31][6]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[7][1]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[6][1]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[5][1]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[14][1]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[3][1]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[2][1]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[1][1]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[0][1]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[31][0]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[12][0]' (FDSE) to 'pm/program_rom_reg[31][6]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[11][0]' (FDSE) to 'pm/program_rom_reg[31][6]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[13][0]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[9][0]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[8][0]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[7][0]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[6][0]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[5][0]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[14][0]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[3][0]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[2][0]' (FDSE) to 'pm/program_rom_reg[31][6]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[1][0]' (FDSE) to 'pm/program_rom_reg[31][6]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[0][0]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[31][6]' (FDSE) to 'pm/program_rom_reg[31][5]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[12][6]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[11][6]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[13][6]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[9][6]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[8][6]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[7][6]' (FDSE) to 'pm/program_rom_reg[31][5]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[6][6]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[5][6]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[14][6]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[3][6]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[2][6]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[1][6]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[0][6]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[31][3]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[12][3]' (FDSE) to 'pm/program_rom_reg[31][5]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[11][3]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[13][3]' (FDSE) to 'pm/program_rom_reg[31][5]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[9][3]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[8][3]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[7][3]' (FDSE) to 'pm/program_rom_reg[31][5]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[6][3]' (FDSE) to 'pm/program_rom_reg[31][5]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[5][3]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[14][3]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[3][3]' (FDSE) to 'pm/program_rom_reg[31][5]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[2][3]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[1][3]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[0][3]' (FDSE) to 'pm/program_rom_reg[31][5]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[31][5]' (FDSE) to 'pm/program_rom_reg[31][4]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[12][5]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[11][5]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[13][5]' (FDSE) to 'pm/program_rom_reg[31][4]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[9][5]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[8][5]' (FDSE) to 'pm/program_rom_reg[31][4]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[7][5]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[6][5]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[5][5]' (FDSE) to 'pm/program_rom_reg[31][4]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[14][5]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[3][5]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[2][5]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[1][5]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[0][5]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[31][2]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[12][2]' (FDSE) to 'pm/program_rom_reg[31][4]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[11][2]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[13][2]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[9][2]' (FDSE) to 'pm/program_rom_reg[31][4]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[8][2]' (FDSE) to 'pm/program_rom_reg[31][4]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[7][2]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[6][2]' (FDSE) to 'pm/program_rom_reg[31][4]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[5][2]' (FDSE) to 'pm/program_rom_reg[31][4]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[14][2]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[3][2]' (FDSE) to 'pm/program_rom_reg[31][4]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[2][2]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[1][2]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[0][2]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[31][4]' (FDSE) to 'pm/program_rom_reg[13][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[12][4]' (FDSE) to 'pm/program_rom_reg[13][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[11][4]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[13][4]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[9][4]' (FDSE) to 'pm/program_rom_reg[13][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[8][4]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[7][4]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[6][4]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[5][4]' (FDSE) to 'pm/program_rom_reg[13][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[14][4]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[3][4]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[2][4]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[1][4]' (FDRE) to 'pm/program_rom_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[0][4]' (FDSE) to 'pm/program_rom_reg[13][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[31][7]' (FDRE) to 'pm/program_rom_reg[14][7]'
+INFO: [Synth 8-3886] merging instance 'pm/program_rom_reg[12][7]' (FDSE) to 'pm/program_rom_reg[13][7]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pm/program_rom_reg[2][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pm/program_rom_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\james/instruction_reg[4] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 932.973 ; gain = 398.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 934.559 ; gain = 400.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1026.195 ; gain = 491.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1026.195 ; gain = 491.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1036.043 ; gain = 501.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1036.043 ; gain = 501.695
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1036.043 ; gain = 501.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1036.043 ; gain = 501.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1036.043 ; gain = 501.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1036.043 ; gain = 501.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    27|
+|3     |LUT1   |     9|
+|4     |LUT2   |    65|
+|5     |LUT3   |    21|
+|6     |LUT4   |    61|
+|7     |LUT5   |    90|
+|8     |LUT6   |   206|
+|9     |FDRE   |   120|
+|10    |IBUF   |    10|
+|11    |OBUF   |    20|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+--------------------------+------+
+|      |Instance    |Module                    |Cells |
++------+------------+--------------------------+------+
+|1     |top         |                          |   630|
+|2     |  decoder   |bin2bcd                   |    35|
+|3     |  fd        |FreqDivider               |    58|
+|4     |  james     |jimmy                     |   479|
+|5     |  mydisplay |basys3_display_controller |    19|
+|6     |    decoder |hex2_7seg                 |     7|
++------+------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1036.043 ; gain = 501.695
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1036.043 ; gain = 411.035
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1036.043 ; gain = 501.695
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1048.098 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1048.098 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+162 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1048.098 ; gain = 749.793
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1048.098 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/dev/fpga/Vivado/jimmy/jimmy.runs/synth_1/basys3_jimmy_prog3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file basys3_jimmy_prog3_utilization_synth.rpt -pb basys3_jimmy_prog3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  5 18:52:53 2020...
