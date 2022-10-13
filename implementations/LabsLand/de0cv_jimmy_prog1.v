@@ -105,6 +105,6 @@ module de0cv_jimmy_prog1(
     end
     
     assign led = S;
-    assign reset = ~V_BT[0];
+    assign reset = V_BT[0];
     
 endmodule
